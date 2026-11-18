@@ -1,0 +1,32 @@
+{
+  "name": "ca-audit-tool",
+  "private": true,
+  "scripts": {
+    "setup-db": "node scripts/init-db.mjs",
+    "dev": "node scripts/init-db.mjs && next dev",
+    "build": "next build",
+    "start": "node scripts/init-db.mjs && next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@e965/xlsx": "^0.20.3",
+    "@libsql/client": "^0.15.0",
+    "drizzle-orm": "0.45.2",
+    "fast-xml-parser": "^5.2.5",
+    "next": "16.4.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.17",
+    "@types/node": "22.19.15",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.4.6",
+    "postcss": "8.5.23",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3"
+  }
+}
